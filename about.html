@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesa.css">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header>
+        <div id="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/logo1.png" alt="" /></a>
+            </div>
+            <div class="header-toggle">
+                <i class="fa fa-bars"></i> <!-- FontAwesome icon for the toggle button -->
+            </div>
+            <div class="header-list">
+                <nav class="header-list-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a class="active" href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-list-icon">
+                    <a href="https://www.myntra.com/"><i class="fa fa-bag-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-section">
+        <div class="about-banner">
+            <h1>About Us</h1>
+            <p>Your go-to destination for stylish and sustainable fashion.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="content-section">
+                <h2>Our Story</h2>
+                <p>FashionStore was born out of a love for chic, contemporary fashion that doesn't compromise on quality
+                    or ethics. We believe that fashion should be accessible, affordable, and sustainable. From our
+                    humble beginnings as a small boutique, we've grown into a global brand, all while staying true to
+                    our core values.</p>
+            </div>
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>We aim to empower individuals to express themselves through fashion. By offering a curated collection
+                    of clothing, accessories, and footwear, we strive to bring the latest trends and timeless classics
+                    to our customers. Sustainability and ethical practices are at the heart of everything we do.</p>
+            </div>
+            <div class="content-section">
+                <h2>Our Values</h2>
+                <ul>
+                    <li>Quality: We prioritize high-quality materials and craftsmanship.</li>
+                    <li>Sustainability: Our products are designed with the environment in mind.</li>
+                    <li>Inclusivity: We offer a wide range of sizes and styles for everyone.</li>
+                    <li>Innovation: We constantly innovate to bring you the best in fashion.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/team-member20.jpeg" alt="Team Member 1">
+                <h3>Millie bobby brown</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member2.webp" alt="Team Member 2">
+                <h3>Emma Stone</h3>
+                <p>Creative Director</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member2.jpeg" alt="Team Member 3">
+                <h3>Emma Watson</h3>
+                <p>Head of Marketing</p>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+
+    <footer>
+        <div id="footer">
+            <div class="contact">
+                <a href="indext.html"><img src="images/logo1.png" alt="" /></a>
+                <br> <br>
+                <br>
+                <h3>Contact</h3>
+                <address>
+                    <p><b>Address:</b> Janta Mall Road, Indore. Madhya Pradesh</p>
+                    <p><b>Phone:</b> Gateways park, Bhopal. Madhya Pradesh</p>
+                    <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
+                </address>
+                <h3>Follow Us</h3>
+                <br>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <br>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="myaccount ">
+                <h3>My account</h3>
+                <br>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="install">
+                <h3>Install App</h3>
+                <br>
+                <p>From App Store or Google Play</p>
+                <div class="download">
+                    <a href="#"><img src="images/pay/app.jpg" alt=""></a>
+                    <a href="#"><img src="images/pay/play.jpg" alt=""></a>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay/pay.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.content-section, .team-member');
+
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+            });
+
+            const revealSections = () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        section.style.opacity = 1;
+                        section.style.transform = 'translateY(0)';
+                        section.style.transition = 'all 0.6s ease-out';
+                    }
+                });
+            };
+
+            revealSections(); // Initial check
+            window.addEventListener('scroll', revealSections);
+
+            // Smooth scroll for all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+
+        // Select the toggle button and the navigation menu
+        const toggleButton = document.querySelector('.header-toggle');
+        const navMenu = document.querySelector('.header-list-nav ul');
+
+        // Add click event listener to the toggle button
+        toggleButton.addEventListener('click', function () {
+            // Toggle the 'show' class on the navigation menu
+            navMenu.classList.toggle('show');
+        });
+
+
+    </script>
+</body>
+
+</html>

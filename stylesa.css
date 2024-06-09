@@ -1,0 +1,139 @@
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.about-banner {
+  background-image: url("images/about-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-banner p {
+  font-size: 1.5rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content .content-section {
+  margin-bottom: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.about-content p,
+.about-content ul {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #f39c12;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-list {
+    flex-direction: column;
+  }
+
+  .header-list-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-content,
+  .team-members,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact - Kara</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="stylecontact.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/logo1.png" alt="" /></a>
+            </div>
+            <div class="header-toggle">
+                <i class="fa fa-bars"></i> <!-- FontAwesome icon for the toggle button -->
+            </div>
+            <div class="header-list">
+                <nav class="header-list-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="active" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-list-icon">
+                    <a href="https://www.myntra.com/"><i class="fa fa-bag-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contact1">
+                <div class="container-contact1">
+                    <div class="contact1-pic js-tilt" data-tilt>
+                        <img src="images/img-01.png" alt="IMG">
+                    </div>
+
+                    <form class="contact1-form validate-form" form name="contact" method="POST" data-netlify="true">
+                        <span class="contact1-form-title">
+                            Contact Form
+                        </span>
+
+                        <div class="wrap-input1 validate-input" data-validate="Veuillez remplir ce champ ">
+                            <input class="input1" type="text" name="name" placeholder="Name">
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="wrap-input1 validate-input"
+                            data-validate="Veuillez saisir une adresse Valide: ex@abc.xyz">
+                            <input class="input1" type="text" name="email" placeholder="Email">
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate="Veuillez remplir ce champ">
+                            <input class="input1" type="text" name="subject" placeholder="Product Name">
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate="Veuillez remplir ce champ">
+                            <textarea class="input1" name="message" placeholder="Message"></textarea>
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="container-contact1-form-btn">
+                            <button class="contact1-form-btn" button type="submit">
+                                <span>
+                                    Submit
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="contact">
+                <a href="indext.html"><img src="images/logo1.png" alt="" /></a>
+                <br> <br>
+                <br>
+                <h3>Contact</h3>
+                <address>
+                    <p><b>Address:</b> Janta Mall Road, Indore. Madhya Pradesh</p>
+                    <p><b>Phone:</b> Gateways park, Bhopal. Madhya Pradesh</p>
+                    <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
+                </address>
+                <h3>Follow Us</h3>
+                <br>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <br>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="myaccount ">
+                <h3>My account</h3>
+                <br>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="install">
+                <h3>Install App</h3>
+                <br>
+                <p>From App Store or Google Play</p>
+                <div class="download">
+                    <a href="#"><img src="images/pay/app.jpg" alt=""></a>
+                    <a href="#"><img src="images/pay/play.jpg" alt=""></a>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay/pay.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        // Select the toggle button and the navigation menu
+        const toggleButton = document.querySelector('.header-toggle');
+        const navMenu = document.querySelector('.header-list-nav ul');
+
+        // Add click event listener to the toggle button
+        toggleButton.addEventListener('click', function () {
+            // Toggle the 'show' class on the navigation menu
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* Reset some basic elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* General Styles */
+body {
+  font-family: "Arial, sans-serif";
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog {
+  padding: 120px 0;
+  background-color: #fff;
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blog-subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+.blog-post {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.blog-post p {
+  margin: 15px;
+  font-size: 1rem;
+  flex-grow: 1; /* Allow text to grow and take available space */
+}
+
+.read-more {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    float: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
